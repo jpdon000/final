@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCartDatailsTable extends Migration
+class CreateCartDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCartDatailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('cart_datails', function (Blueprint $table) {
+        Schema::create('cart_details', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('cart_id');
             $table->string('product_id');
@@ -29,6 +29,6 @@ class CreateCartDatailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cart_datails');
+        Schema::dropIfExists('cart_details');
     }
 }

@@ -54,6 +54,10 @@
             <a class="collapse-item" href="{{route('payments.index')}}">Payments</a>
             <a class="collapse-item" href="{{route('details.index')}}">Order_details</a>
             <a class="collapse-item" href="{{route('wishlists.index')}}">Wishlist</a>
+            <a class="collapse-item" href="{{route('carts.index')}}">Carts Table</a>
+            <a class="collapse-item" href="{{route('carts_details.index')}}">Carts_details Table</a>
+            <a class="collapse-item" href="{{route('category.index')}}">Category Table</a>
+            <a class="collapse-item" href="{{route('backend.index')}}">Sitesettings Table</a>
         </div>
     </div>
 </li>

@@ -54,7 +54,7 @@
 
 
 
-<form action='{{route("sitesetting.store")}}' enctype="multipart/form-data" method='POST'>
+<form action='{{route("backend.store")}}' enctype="multipart/form-data" method='POST'>
 @csrf
 
 
