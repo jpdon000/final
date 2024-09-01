@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
@@ -5,7 +17,7 @@
     <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-laugh-wink"></i>
     </div>
-    <div class="sidebar-brand-text mx-3">  {{app('site_settings')['image'] ?? 'Hello world'}}Olive Store </div>
+    <div class="sidebar-brand-text mx-3">  {{app('site_settings')['name'] ?? 'Hello world'}} </div>
 </a>
 
 <!-- Divider -->
@@ -38,6 +50,10 @@
             <h6 class="collapse-header">Custom Components:</h6>
             <a class="collapse-item" href="{{route('products.index')}}">Produncts</a>
             <a class="collapse-item" href="{{route('users.index')}}">Users</a>
+            <a class="collapse-item" href="{{route('orders.index')}}">Order</a>
+            <a class="collapse-item" href="{{route('payments.index')}}">Payments</a>
+            <a class="collapse-item" href="{{route('details.index')}}">Order_details</a>
+            <a class="collapse-item" href="{{route('wishlists.index')}}">Wishlist</a>
         </div>
     </div>
 </li>
@@ -106,3 +122,14 @@
 
 
 </ul>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

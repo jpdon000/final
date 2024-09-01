@@ -99,3 +99,36 @@ Route::post('/register/store','AuthController@store')->name('register.store');
 // Sitesettings routes
 Route::view('/sitesetting','backend.sitesetting')->name('sitesetting')->middleware('auth');
 Route::post('/sitesetting/store','SiteSettingController@store')->name('sitesetting.store')->middleware('auth');
+
+
+// for order......................................!!
+Route::get('/orders','OrderController@index')->name('orders.index')->middleware('auth');
+Route::get('/orders/delete/{id}','OrderController@delete')->name('orders.delete')->middleware('auth');
+Route::get('/orders/edit/{id}','OrderController@edit')->name('orders.edit')->middleware('auth');
+Route::post('/orders/update/{id}','OrderController@update')->name('orders.update')->middleware('auth');
+
+
+
+// for Payments......................................!!
+Route::get('/payments','PaymentController@index')->name('payments.index')->middleware('auth');
+Route::get('/payments/delete/{id}','PaymentController@delete')->name('payments.delete')->middleware('auth');
+Route::get('/payments/edit/{id}','PaymentController@edit')->name('payments.edit')->middleware('auth');
+Route::post('/payments/update/{id}','PaymentController@update')->name('payments.update')->middleware('auth');
+
+
+
+
+// for Details......................................!!
+Route::get('/details','DetailsController@index')->name('details.index')->middleware('auth');
+Route::get('/details/delete/{id}','DetailsController@delete')->name('details.delete')->middleware('auth');
+Route::get('/details/edit/{id}','DetailsController@edit')->name('details.edit')->middleware('auth');
+Route::post('/details/update/{id}','DetailsController@update')->name('details.update')->middleware('auth');
+
+
+
+// for wishlists......................................!!
+Route::get('/wishlists','WishlistsController@index')->name('wishlists.index')->middleware('auth');
+Route::get('/wishlists/delete/{id}','WishlistsController@delete')->name('wishlists.delete')->middleware('auth');
+Route::get('/wishlists/edit/{id}','WishlistsController@edit')->name('wishlists.edit')->middleware('auth');
+Route::post('/wishlists/update/{id}','WishlistsController@update')->name('wishlists.update')->middleware('auth');
+
