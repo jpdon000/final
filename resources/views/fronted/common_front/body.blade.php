@@ -57,7 +57,8 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="section-tittle mb-70">
-                            <h2>New Arrivals</h2>
+                            <h2 id="latest">New Arrivals</h2>
+                          
                         </div>
                     </div>
                 </div>

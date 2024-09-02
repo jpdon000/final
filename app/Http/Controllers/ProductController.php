@@ -41,7 +41,6 @@ class ProductController extends Controller
           'price' => $request->get('price'),
           'description' => $request->get('description'),
           'category' => $request->get('category'),
-          'quantity' => $request->get('quantity'),
           'status' => $request->get('status'),
           'image' => $image
         ];
@@ -106,7 +105,6 @@ class ProductController extends Controller
             'price' => $request->get('price'),
             'description' => $request->get('description'),
             'category' => $request->get('category'),
-            'quantity' => $request->get('quantity'),
             'status' => $request->get('status'),
             'image' => $image
         

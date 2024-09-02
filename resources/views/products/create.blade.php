@@ -76,10 +76,6 @@
     <input type="text" name="category" class="form-control" id="" aria-describedby="emailHelp">
   </div>
 
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Quantity</label>
-    <input type="text" name="quantity" class="form-control" id="" aria-describedby="emailHelp">
-  </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Status</label>

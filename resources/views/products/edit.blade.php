@@ -52,10 +52,6 @@
   </div>
 
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Quantity</label>
-    <input type="text" name="quantity" class="form-control" id="" aria-describedby="emailHelp" value="{{$data->quantity}}">
-  </div>
-  <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Status</label>
     <input type="text" name="status" class="form-control" id="" aria-describedby="emailHelp" value="{{$data->status}}">
   </div>
